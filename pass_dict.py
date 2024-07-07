@@ -1,26 +1,22 @@
 pass_dict = {
     "formatVersion": 1,
-    "serialNumber": "randomness",
+    "serialNumber": "001",
     "webServiceURL": "https://example.com/passes/",
     "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
-    "locations": [
-        {"longitude": -122.3748889, "latitude": 37.6189722},
-        {"longitude": -122.03118, "latitude": 37.33182},
-    ],
     "barcode": {
         "message": "123456789",
-        "format": "PKBarcodeFormatPDF417",
+        "format": "PKBarcodeFormatQR",
         "messageEncoding": "iso-8859-1",
     },
-    "organizationName": "Toy Town",
-    "description": "Toy Town Membership",
-    "logoText": "Toy Town",
+    "organizationName": "WatchSafe",
+    "description": "WatchSafe Pass",
+    "logoText": "WatchSafe",
     "foregroundColor": "rgb(255, 255, 255)",
-    "backgroundColor": "rgb(197, 31, 31)",
+    "backgroundColor": "rgb(0,0,0)",
     "generic": {
-        "primaryFields": [{"key": "member", "value": "Johnny Appleseed"}],
+        "primaryFields": [{"key": "member", "value": "Chas Smith"}],
         "secondaryFields": [
-            {"key": "subtitle", "label": "MEMBER SINCE", "value": "2012"}
+            {"key": "copyright", "value": "2024"}
         ],
         "auxiliaryFields": [
             {"key": "level", "label": "LEVEL", "value": "Platinum"},
