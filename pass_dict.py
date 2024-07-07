@@ -5,11 +5,13 @@ pass_dict = {
     "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
     "barcode": {
         "message": "https://whip-mixolydian-visitor.glitch.me/",
-        "format": "PKBarcodeFormatQR",
+        "format": "PKBarcodeFormatAztec",
         "messageEncoding": "iso-8859-1",
+        "altText": "WatchSafe by Aerodore"
     },
     "organizationName": "WatchSafe",
     "description": "WatchSafe Pass",
+    "labelColor": "rgb(255, 255, 255)",
     "foregroundColor": "rgb(212, 175, 55)",
     "backgroundColor": "rgb(0,0,0)",
     "generic": {

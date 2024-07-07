@@ -1,1 +1,8 @@
+pipenv --python /opt/homebrew/bin/python3.12
+pipenv shell
+
+// No need every time, only after pipenv --rm ; pipenv install
+
+
+
 python3.12 main.py --pass-type-identifier pass.uk.chasmicroelectronics.freehug --certificate-password 12345 --team-identifier 4X457C8765 --certificate-path ./Certificates.p12 --wwdr-path ./WWDR.pem
