@@ -1,5 +1,6 @@
 import json
 import hashlib
+from datetime import datetime, timezone
 import os
 import sys
 import shutil
@@ -65,7 +66,8 @@ def main():
         pass_type_identifier=pass_type_identifier,
         team_identifier=team_identifier,
     )
-    pass_dict_json = json.dumps(pass_dict_copy, indent=2)
+    pass_dict_json = json.dumps(pass_dict_copy, indent=2, default=str)
+    print(pass_dict_json)
     with open("pass.json", "w") as f:
         f.write(pass_dict_json)
 
@@ -205,6 +207,8 @@ def create_pass_dict(pass_type_identifier: str, team_identifier: str):
     pass_dict_copy = pass_dict.copy()
     pass_dict_copy["passTypeIdentifier"] = pass_type_identifier
     pass_dict_copy["teamIdentifier"] = team_identifier
+    pass_dict_copy["generic"]["backFields"][2]["value"] = datetime.now(timezone.utc).isoformat()
+
     return pass_dict_copy
 
 

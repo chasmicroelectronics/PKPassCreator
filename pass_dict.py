@@ -14,8 +14,12 @@ pass_dict = {
     "labelColor": "rgb(255, 255, 255)",
     "foregroundColor": "rgb(212, 175, 55)",
     "backgroundColor": "rgb(0,0,0)",
+    "NFC": {
+        "encryptionPublicKey": "00000000",
+        "message": "335ac1f7"
+    },
     "generic": {
-        "headerFields": [{"key": "count", "value": "Watch Safe", "textAlignment" : "PKTextAlignmentCenter"}],
+        "headerFields": [{"key": "count", "value": "Watch Safe", "textAlignment" : "PKTextAlignmentLeft"}],
         "primaryFields": [],
         "secondaryFields": [
         ],
